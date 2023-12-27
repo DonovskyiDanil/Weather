@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,64 +8,64 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
 
-<h1>Weather map</h1>
+    <h1>Weather map</h1>
 
-<div id="inputContainerName" class="inputFrame">
-    <div>
-        <label for="cityInput">City Name</label>
-        <input type="text" id="cityInput" placeholder="">
-    </div>
-</div>
-
-<div id="inputContainerId" class="inputFrame">
-    <div>
-        <label for="idInput">City ID</label>
-        <input type="text" id="idInput" placeholder="">
-    </div>
-</div>
-
-<div id="RadioButton" class="inputFrameButton">
-    <div class="radioContainer">
-        <label class="radioLabel">
-            <span class="radioText">City Name</span>
-            <input type="radio" name="inputType" value="city" onclick="enableInput('city')" checked>
-        </label>
-        <label class="radioLabelName">
-            <span class="radioText">City ID</span>
-            <input type="radio" name="inputType" value="id" onclick="enableInput('id')">
-        </label>
-    </div>
-</div>
-<div id="WeatherInfoContainer" class="inputFrame">
-    <div id="ContainerTemp" class="weatherContainer">
+    <div id="inputContainerName" class="inputFrame">
         <div>
-            <h3>Temperature</h3>
-            <p id="temperature"></p>
+            <label for="cityInput">City Name</label>
+            <input type="text" id="cityInput" placeholder="">
         </div>
     </div>
 
-    <div id="ContainerSpeed" class="weatherContainer">
+    <div id="inputContainerId" class="inputFrame">
         <div>
-            <h3>Wind Speed</h3>
-            <p id="windSpeed"></p>
+            <label for="idInput">City ID</label>
+            <input type="text" id="idInput" placeholder="">
         </div>
     </div>
 
-    <div id="ContainerHumi" class="weatherContainer">
-        <div>
-            <h3>Humidity</h3>
-            <p id="humidity"></p>
+    <div id="RadioButton" class="inputFrameButton">
+        <div class="radioContainer">
+            <label class="radioLabel">
+                <span class="radioText">City Name</span>
+                <input type="radio" name="inputType" value="city" checked>
+            </label>
+            <label class="radioLabelName">
+                <span class="radioText">City ID</span>
+                <input type="radio" name="inputType" value="id">
+            </label>
         </div>
     </div>
-</div>
+    <div id="WeatherInfoContainer" class="inputFrame">
+        <div id="ContainerTemp" class="weatherContainer">
+            <div>
+                <h3>Temperature</h3>
+                <p id="temperature"></p>
+            </div>
+        </div>
 
-<div id="buttonContainer">
-    <button onclick="getWeather()">OK</button>
-    <button onclick="getWeather()">Weather</button>
-    <button onclick="cancelButton()">Cancel</button>
-</div>
+        <div id="ContainerSpeed" class="weatherContainer">
+            <div>
+                <h3>Wind Speed</h3>
+                <p id="windSpeed"></p>
+            </div>
+        </div>
 
+        <div id="ContainerHumi" class="weatherContainer">
+            <div>
+                <h3>Humidity</h3>
+                <p id="humidity"></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="buttonContainer">
+        <button id="okButton">OK</button>
+        <button id="weatherButton">Weather</button>
+        <button id="cancelButton">Cancel</button>
+    </div>
 </body>
 </html>
